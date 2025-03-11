@@ -126,7 +126,7 @@ def construct_society(question: str) -> OwlRolePlaying:
 def main():
     r"""Main function to run the OWL system with an example question."""
     # Example research question
-    question = "Navigate to Amazon.com and identify one product that is attractive to coders. Please provide me with the product name and price. No need to verify your answer."
+    question = "I'm an AI student with plans to get cracked, start writing papers on LLMs, etc. Currently, I'm getting started, studying in an M1 info at UCBL, Lyon, with an internship at INSA on a semi-supervised model for vision recognition of uveitis. Tomorrow, I have a meeting with Loic Boussel, a friend of my parents, who's a radiologist with several papers published in AI. He's french and works in Lyon. I need you to give me a comprehensive report of his works, a link to the most important articles I should read. Finish with a quick summary with important facts about him and his research (with some specific examples so he knows I know his work deeply) and a list of questions i should ask him - including one or two on his time in SF. The goals of the interview are 1. Find out how exactly he uses ai and what his role in it is - does he write code, etc 2. get him to like me and talk about how he was introduced to sf 3. get him to put me in contact with people in sf or at least in the us for an internship, possibly this summer."
 
     # Construct and run the society
     society = construct_society(question)

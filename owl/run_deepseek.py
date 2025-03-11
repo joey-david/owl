@@ -116,7 +116,7 @@ def construct_society(question: str) -> OwlRolePlaying:
         user_agent_kwargs=user_agent_kwargs,
         assistant_role_name="assistant",
         assistant_agent_kwargs=assistant_agent_kwargs,
-        output_language="Chinese",
+        output_language="English",
     )
 
     return society
@@ -125,11 +125,7 @@ def construct_society(question: str) -> OwlRolePlaying:
 def main():
     r"""Main function to run the OWL system with an example question."""
     # Example research question
-    question = (
-        "请分析GitHub上CAMEL-AI项目的最新统计数据。找出该项目的星标数量、"
-        "贡献者数量和最近的活跃度。然后，创建一个简单的Excel表格来展示这些数据，"
-        "并生成一个柱状图来可视化这些指标。最后，总结CAMEL项目的受欢迎程度和发展趋势。"
-    )
+    question = input("Enter your question/task: ")
 
     # Construct and run the society
     society = construct_society(question)
